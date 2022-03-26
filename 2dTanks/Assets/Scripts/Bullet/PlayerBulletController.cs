@@ -21,7 +21,7 @@ public class PlayerBulletController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D hit)
     {   if(hit.tag != "Player"){
             if(hit.tag == "Enemy"){
-                Destroy(hit.gameObject);
+                Destroy(hit.transform.parent.gameObject);
             }
             Destroy(gameObject);
         }

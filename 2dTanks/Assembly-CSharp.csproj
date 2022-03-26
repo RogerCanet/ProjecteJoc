@@ -36,12 +36,48 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerWeapon.cs" />
-     <Compile Include="Assets\Scripts\Bullet\PlayerBulletController.cs" />
-     <Compile Include="Assets\Scripts\Bullet\EnemyBulletController.cs" />
-     <Compile Include="Assets\Scripts\Enemy\MutantWeapon.cs" />
      <Compile Include="Assets\Scripts\Enemy\CloneWeapon.cs" />
+     <Compile Include="Assets\Scripts\Bullet\EnemyBulletController.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\MoveToPosition.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\RootNode.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\Breakpoint.cs" />
+     <Compile Include="Assets\Scripts\Enemy\MutantWeapon.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\DecoratorNode.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\RandomPosition.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Inverter.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\InterruptSelector.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\Log.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\RandomFailure.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Succeed.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Failure.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Timeout.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Sequencer.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\ActionNode.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\BehaviourTree.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\CompositeNode.cs" />
+     <Compile Include="Assets\Scripts\MeshAgentPatch\NavMeshAgentFix.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\Wait.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Repeat.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\NodePort.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\Blackboard.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\Context.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\RandomSelector.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Parallel.cs" />
+     <Compile Include="Assets\Scripts\Bullet\PlayerBulletController.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\BehaviourTreeRunner.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\Node.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerWeapon.cs" />
+     <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Selector.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ZombieAtack.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\ZombiePlayerDetection.cs" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\ScriptTemplates\101-BehaviourTree__CompositeNode-NewCompositeNode.cs.txt" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\BehaviourTreeEditor.uxml" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\BehaviourTreeEditorStyle.uss" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\ScriptTemplates\101-BehaviourTree__DecoratorNode-NewDecoratorNode.cs.txt" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\ScriptTemplates\101-BehaviourTree__ActionNode-NewActionNode.cs.txt" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\NodeView.uxml" />
+     <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\NodeViewStyle.uss" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -704,6 +740,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{88de15b8-989a-ca2b-f448-39c727df67a6}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{cb345657-2e7c-d52b-1ed7-e6504961bacd}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
