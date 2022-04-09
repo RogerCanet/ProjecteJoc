@@ -36,20 +36,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Enemy\CloneWeapon.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\ZombiePlayerDetection.cs" />
      <Compile Include="Assets\Scripts\Bullet\EnemyBulletController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\MoveToPosition.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\RootNode.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\RandomAim.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\Breakpoint.cs" />
-     <Compile Include="Assets\Scripts\Enemy\MutantWeapon.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ZombieAtack.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\DecoratorNode.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\DetectOnHit.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BarrierHit.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\RandomPosition.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Inverter.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\InterruptSelector.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\AimAtPlayerShoot.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\Log.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Actions\RandomFailure.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Succeed.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\PositionNearPlayer.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Failure.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Decorators\Timeout.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Sequencer.cs" />
@@ -64,13 +69,14 @@
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\Context.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\RandomSelector.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Parallel.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet\PlayerBulletController.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\BehaviourTreeRunner.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Runtime\Node.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerWeapon.cs" />
      <Compile Include="Assets\TheKiwiCoder\BehaviourTree\Scripts\Composites\Selector.cs" />
-     <Compile Include="Assets\Scripts\Enemy\ZombieAtack.cs" />
-     <Compile Include="Assets\Scripts\Enemy\BHnodes\ZombiePlayerDetection.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BHnodes\BackToPlayer.cs" />
+     <Compile Include="Assets\Scripts\Bullet\BounceEnemyBulletController.cs" />
      <None Include="Assets\TheKiwiCoder\BehaviourTree\ScriptTemplates\101-BehaviourTree__CompositeNode-NewCompositeNode.cs.txt" />
      <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\BehaviourTreeEditor.uxml" />
      <None Include="Assets\TheKiwiCoder\BehaviourTree\UIBuilder\BehaviourTreeEditorStyle.uss" />
