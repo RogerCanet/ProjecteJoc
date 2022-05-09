@@ -31,7 +31,14 @@ public class Weapon : MonoBehaviour
                 timer = 0;
             }
             break;
-            
+        case 2:
+        if(timer > waitingTime){
+            Instantiate(bullet,firePoint.position, transform.rotation);
+            Instantiate(bullet,firePoint.position, transform.rotation * Quaternion.Euler(0,0,10));
+            Instantiate(bullet,firePoint.position, transform.rotation * Quaternion.Euler(0,0,-10));
+            timer = 0;
+        }
+        break;
         default:
             break;
         }

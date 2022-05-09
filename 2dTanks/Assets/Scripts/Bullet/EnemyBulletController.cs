@@ -19,7 +19,7 @@ public class EnemyBulletController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D hit)
-    {   if(hit.tag != "Enemy"){
+    {   if(hit.tag != "Enemy" && hit.tag != "EnemyBullet"){
             if(hit.tag == "Player"){
                 Destroy(hit.gameObject);
             }

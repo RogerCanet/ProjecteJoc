@@ -27,7 +27,7 @@ public class PlayerWeapon : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, 0f, angle -90);
     
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && !pauseMenu.isPaused){
             Instantiate(bullet,firePoint.position, transform.rotation);
         }
     }
