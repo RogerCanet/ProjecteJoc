@@ -9,10 +9,6 @@ public class ZombiePlayerDetection : ActionNode
     protected override void OnStart() {
         if (player == null)
         player = GameObject.FindGameObjectWithTag("Player");
-        Debug.DrawLine(context.transform.position,(context.transform.position + new Vector3(circleRad, 0, 0)),Color.white);
-        Debug.DrawLine(context.transform.position,(context.transform.position - new Vector3(circleRad, 0, 0)),Color.white);
-        Debug.DrawLine(context.transform.position,(context.transform.position + new Vector3(0, circleRad, 0)),Color.white);
-        Debug.DrawLine(context.transform.position,(context.transform.position - new Vector3(0, circleRad, 0)),Color.white);
     }
 
     protected override void OnStop() {

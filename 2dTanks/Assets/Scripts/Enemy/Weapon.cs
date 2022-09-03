@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
         }
         break;
         default:
-            break;
+        break;
         }
     }
 }
