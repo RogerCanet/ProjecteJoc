@@ -34,7 +34,6 @@ public class BounceEnemyBulletController : MonoBehaviour
             Destroy(gameObject);
         }
         if(bounces>maxBounces)Destroy(gameObject);
-        //Destroy(gameObject);
         
     }
 }

@@ -27,11 +27,7 @@ public class AimAtPlayerShoot : ActionNode
 
             context.transform.rotation = Quaternion.Euler(0f, 0f, angle -90);
 
-            //context.transform.rotation = Quaternion.Euler(0f, 0f, 0 -90);
-
             RaycastHit2D hit = Physics2D.Raycast(context.transform.position, offset);
-            Debug.DrawRay(context.transform.position, offset, Color.green);
-            Debug.Log($"{hit.collider.name}");
             if(hit.collider.CompareTag("Player"))
                 context.gameObject.GetComponent<Weapon>().shoot();
         }

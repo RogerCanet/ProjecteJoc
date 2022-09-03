@@ -45,7 +45,6 @@ MonoBehaviour:
   - {fileID: 7515259352916824891}
   - {fileID: 5769570754056375807}
   - {fileID: -4492619722399571502}
-  - {fileID: 4255995106515917285}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &723840340841610320
@@ -71,28 +70,6 @@ MonoBehaviour:
   child: {fileID: 7515259352916824891}
   restartOnSuccess: 1
   restartOnFailure: 0
---- !u!114 &4255995106515917285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61431bba79d7d7843b82bf1de71703f5, type: 3}
-  m_Name: Sequencer
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 74b1acdc499a9424fa6872f344d34f4a
-  position: {x: -9.00003, y: -418.11975}
-  blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-  description: 
-  drawGizmos: 0
-  children:
-  - {fileID: 723840340841610320}
 --- !u!114 &5769570754056375807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,12 +106,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 371a42255bca07849b1e4a1c3913f758
-  position: {x: -9, y: -531.64}
+  position: {x: -9.000013, y: -432.98184}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
   description: 
   drawGizmos: 0
-  child: {fileID: 4255995106515917285}
+  child: {fileID: 723840340841610320}
 --- !u!114 &7515259352916824891
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -111,7 +111,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: efe20222af04075459d44a1f454dd989
-  position: {x: 2, y: -17}
+  position: {x: 239.00003, y: -25.727196}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
   description: 
@@ -153,7 +153,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: a63b871946a9e704f8cbdaf9a57eb880
-  position: {x: 77, y: 121}
+  position: {x: 239.00003, y: 94.81817}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
   description: 
@@ -197,7 +197,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: dae3aa4c948f80b4fa569d94123f8b2a
-  position: {x: 2, y: -144}
+  position: {x: 239.00003, y: -154.47266}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
   description: 
