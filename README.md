@@ -1,6 +1,6 @@
 # ProjecteJoc
- Projecte d'un videojoc shooter en 2D per el TFG
+Development of a 2d top-down shooter videogame for the end of degree project
 "# ProjecteJoc" 
 
-#Instalació
-Afegir carpeta 
+# Installation
+Add folder 2dTanks as a Unity project into UnityHub
