@@ -1,5 +1,6 @@
 # ProjecteJoc
- Projecte per el TFG
+ Projecte d'un videojoc shooter en 2D per el TFG
 "# ProjecteJoc" 
 
-Projecte de Unity.
+#Instalació
+Afegir carpeta 
